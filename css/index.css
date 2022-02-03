@@ -1,20 +1,24 @@
-body, html {
+body, html 
+{
   height: 100%;
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
 }
 
-* {
+* 
+{
   box-sizing: border-box;
 }
 
-a:link {
+#bar-text a:link 
+{
   color: black;
   text-decoration: none;
   padding: 14px 25px;
 }
 
-a:hover{
+#bar-text a:hover
+{
   background-color: CornflowerBlue;
   color: white;
 }
@@ -31,12 +35,6 @@ a:hover{
   /*animation-name: color-change-RoyalBlue-SteelBlue-to-RoyalBlue;*/
   /*animation-duration: 2s;*/
 }
-
-/*@keyframes color-change-RoyalBlue-SteelBlue-to-RoyalBlue */
-/*{*/
-  /*from {background-color: RoyalBlue;}*/
-  /*to {background-color: SteelBlue;}*/
-/*}*/
 
 .page-bar-header1
 {
@@ -182,16 +180,12 @@ a:hover{
 	font-size: 20px;
 	width: 60%;
 	text-align: left;
-	/*padding-left: 70px;*/
 	color: RoyalBlue;
-	/*border: 3px solid #000000;*/
-	/*animation-name: text-anime;*/
-  /*animation-duration: 10s;*/
-  /*animation-iteration-count: infinite;*/
 }
-p::before 
+
+#animated-text p::before 
 {
-  content: "test0";
+  content: "";
   animation: text-anime infinite 12s;
   padding-left: 70px;
 }
@@ -269,5 +263,68 @@ p::before
     margin-left: 5%;
     color: RoyalBlue;
     content: "Call us +9471-255-9318";
+  }
+}
+
+.about-site
+{
+	position: absolute;
+	z-index: 7;
+	font-size: 15px;
+	/*border: 3px solid #000000;*/
+	width: 100%;
+	height: 100px;
+	margin-top: 55%;
+}
+
+.description-of-site
+{
+	color: navy;
+  line-height: 1.5;
+  text-transform: uppercase;
+  text-align: justify;
+  text-justify: inter-word;
+  padding-left: 350px;
+  padding-right: 350px;
+}
+
+div.desc 
+{
+  padding: 15px;
+  text-align: center;
+}
+
+div.img-gallery 
+{
+  border: 1px solid #ccc;
+}
+
+div.img-gallery:hover 
+{
+  border: 1px solid #777;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.9999%;
+	margin-top: 0%;
+	border: 3px solid #000000;
+}
+
+@media only screen and (max-width: 700px) 
+{
+  .responsive 
+  {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) 
+{
+  .responsive 
+  {
+    width: 100%;
   }
 }
