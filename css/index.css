@@ -25,10 +25,10 @@ a:hover{
 	height: 56px;
 	background-color: AntiqueWhite;
 	text-align: center;
-  	display: inline-block;
-  	padding-left: 20px;
-  	position: absolute;
-  	z-index: 2;
+  display: inline-block;
+  padding-left: 20px;
+  position: absolute;
+  z-index: 2;
 }
 
 .page-bar-text
@@ -65,32 +65,33 @@ a:hover{
 	position: absolute;
 	z-index: 1;
 	background-position: center;
-  	background-repeat: no-repeat;
-  	background-size: cover;
-  	padding-left: 0px;
-  	filter: blur(8px);
-  	-webkit-filter: blur(8px);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-left: 0px;
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
 }
 
 .search-option-menu
 {
-	width: 100%;
-	height: 100%;
+	width: 50%;
 	position: absolute;
 	z-index: 3;
 	text-align: center;
-	padding-top: 25%;
-	/*border: 3px solid #f1f1f1;*/
+	/*border: 3px solid #000000;*/
+	margin-top: 25%;
+	margin-left: 25%;
+	/*margin: auto;*/
 }
 
 .buton-on-option-menu
 {
-  	background-color: SaddleBrown;
+  background-color: BurlyWood;
 	border: none;
 	font-size: 25px;
 	width: 150px;
-  	height: 50px;
-  	/*padding: 20px;*/
+  height: 50px;
+  /*padding: 20px;*/
 
 }
 
@@ -100,32 +101,38 @@ a:hover{
  	color: white;
 }
 
-.search-option-menu .search-container {
-  	float: center;
-  	position: absolute;
-	z-index: 4;
+.search-option-menu .search-container 
+{
+	/*z-index: 5;*/
+	/*border: 3px solid #000000;*/
+	margin-top: 5px;
 }
 
 .search-option-menu input[type=text] {
   padding: 20px;
-  margin: 5px;
-  font-size: 25px;
+  font-size: 20px;
   border: none;
-  width: 600px;
-  text-align: center;
+  height: 60px;
+  width: 490px;
+  text-align: left;
+  /*border: 3px solid #000000;*/
 }
 
-.search-option-menu .search-container button {
-  float: right;
-  padding: 20px 20px;
-  margin-top: 8px;
-  margin-right: 16px;
-  background: #ddd;
-  font-size: 25px;
+.search-option-menu .search-container button 
+{
+  font-size: 20px;
+  color: white;
+  height: 60px;
+  width: 120px;
+  background: DodgerBlue;
   border: none;
   cursor: pointer;
+  border-radius: 10px;
+  /*border: 3px solid #000000;*/
 }
 
-.search-option-menu .search-container button:hover {
-  background: #ccc;
+.search-option-menu .search-container button:hover 
+{
+  background: lightblue;
+  color: black;
 }
